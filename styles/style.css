@@ -10,29 +10,24 @@
 
 *, ::before, ::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     margin: 0;
     padding: 0;
     background-color: black;
     cursor: none;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-}
-
-.section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 144px;
-    color: white;
     font-family: "ZonaProBold";
 }
+
 
 .cursor {
     pointer-events: none;
@@ -43,3 +38,259 @@ h1 {
     mix-blend-mode: difference;
 }
 
+.noise::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: .03;
+    z-index: 1000;
+    pointer-events: none;
+    background-image: url(./assets/noise.gif);
+  }
+
+.marging {
+    position: fixed;
+    z-index: -1;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line {
+    border-left: solid 0.5px rgba(255, 255, 255, 0.1); 
+}
+
+@media screen and (max-width:1226px) {
+    .marging{
+        display: none;
+    }
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    margin-top: 40px;
+    position: absolute;
+  }
+  
+  .liste-nav {
+    height: 100%;
+    max-width: 730px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: auto;
+  }
+  
+  .item-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: none;
+  }
+
+  .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 144px;
+    color: white;
+    font-family: "ZonaProBold";
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section1 p {
+    color: #fff;
+    font-family: 'ZonaProExtralight';
+    font-size: 24px;
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+    padding: 50px;
+    font-family: 'ZonaProExtralight';
+    cursor: none;
+}
+
+@media screen and (max-width: 990px){
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .social {
+        display: flex;
+    }
+    .social a {
+        padding: 10px;
+    }
+}
+
+.about {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.aboutme {
+    max-width: 940px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 48px;
+    padding: 65px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+
+.about p {
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'ZonaProExtralight';
+    margin-left: 0px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 20px;
+}
+
+.techno {
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.cv {
+    background: #fff;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-family: 'ZonaProExtralight';
+    border-radius: 14px;
+    max-width: 150px;
+    cursor:none;
+    transition: 0.4s ease-in-out;
+    margin: 20px;
+    margin-left: 0;
+    border: 1px solid black;
+}
+
+.cv:hover {
+    color: #fff;
+    background: black;
+    border: 1px solid white;
+}
+
+@media screen and (max-width:1250px){
+    .aboutme {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 70px;
+        align-items: center;
+    }
+    .aboutme h2 {
+        padding: 0; 
+    }
+    .cv {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:906px){
+    .description{
+        max-width: 450px;
+        margin-right: 0;
+    }
+}
+
+.contact {
+    color: white;
+    max-width: 940px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.contact h2 {
+    font-size: 48px;
+    padding-bottom: 45px;
+}
+
+.contact p {
+    font-family: 'ZonaProExtralight';
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.social_network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.social_network a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    cursor: none;
+}
+
+@media screen and (max-width:1250px){
+    .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 70px;
+        align-items: center;
+    }
+    .social_network {
+        margin-top: 20px;
+    }
+    .social_network a {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+footer {
+    color: white;
+    font-size: 14px;
+    font-family: 'ZonaProExtralight';
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    padding-bottom: 20px;
+    width: 100vw;
+    text-align: center;
+}
