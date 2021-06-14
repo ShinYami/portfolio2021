@@ -94,6 +94,19 @@ nav {
   cursor: none;
 }
 
+.item-nav a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background: #f1f1f1;
+  transition: width 0.2s ease-in-out;
+}
+.item-nav a:hover::after {
+  width: 100%;
+}
+
 .section1 {
   display: flex;
   justify-content: center;
