@@ -104,14 +104,14 @@ nav {
 
 h1 {
   font-size: 144px;
-  color: white;
+  color: #f1f1f1;
   font-family: "ZonaProBold";
   margin: 0 auto;
   text-align: center;
 }
 
 .section1 p {
-  color: #fff;
+  color: #f1f1f1;
   font-family: "ZonaProExtralight";
   font-size: 24px;
   text-align: center;
@@ -124,7 +124,7 @@ h1 {
 }
 
 .social a {
-  color: #fff;
+  color: #f1f1f1;
   text-decoration: none;
   padding: 50px;
   font-family: "ZonaProExtralight";
@@ -148,7 +148,7 @@ h1 {
 }
 
 .about {
-  color: #fff;
+  color: #f1f1f1;
   margin-top: 30px;
 }
 
@@ -182,7 +182,7 @@ h1 {
 }
 
 .cv {
-  background: #fff;
+  background: #f1f1f1;
   text-decoration: none;
   color: black;
   padding: 15px;
@@ -197,7 +197,7 @@ h1 {
 }
 
 .cv:hover {
-  color: #fff;
+  color: #f1f1f1;
   background: black;
   border: 1px solid white;
 }
@@ -370,7 +370,7 @@ h1 {
 
 .social_network a {
   text-decoration: none;
-  color: white;
+  color: #f1f1f1;
   font-size: 24px;
   cursor: none;
 }
@@ -396,7 +396,7 @@ h1 {
 }
 
 footer {
-  color: white;
+  color: #f1f1f1;
   font-size: 14px;
   font-family: "ZonaProExtralight";
   display: flex;
