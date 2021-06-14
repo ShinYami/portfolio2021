@@ -1,296 +1,408 @@
 @font-face {
-    font-family: 'ZonaProBold';
-	src: url('../fonts/zonapro-bold-webfont.woff') format('woff');
+  font-family: "ZonaProBold";
+  src: url("../fonts/zonapro-bold-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'ZonaProExtralight';
-	src: url('../fonts/zonapro-extralight-webfont.woff') format('woff');
+  font-family: "ZonaProExtralight";
+  src: url("../fonts/zonapro-extralight-webfont.woff") format("woff");
 }
 
-*, ::before, ::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    cursor: none;
-    width: 100vw;
-    height: 100vh;
-    font-family: "ZonaProBold";
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  cursor: none;
+  width: 100vw;
+  height: 100vh;
+  font-family: "ZonaProBold";
 }
-
 
 .cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.3rem;
-    background-color: #fff;
-    border-radius: 50%;
-    mix-blend-mode: difference;
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
 }
 
-.noise::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    opacity: .03;
-    z-index: 1000;
-    pointer-events: none;
-    background-image: url(./assets/noise.gif);
-  }
-
 .marging {
-    position: fixed;
-    z-index: -1;
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  z-index: -1;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .line {
-    border-left: solid 0.5px rgba(255, 255, 255, 0.1); 
+  border-left: solid 0.5px rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width:1226px) {
-    .marging{
-        display: none;
-    }
+@media screen and (max-width: 1226px) {
+  .marging {
+    display: none;
+  }
 }
 
 nav {
-    height: 70px;
-    width: 100%;
-    z-index: 10;
-    margin-top: 40px;
-    position: absolute;
-  }
-  
-  .liste-nav {
-    height: 100%;
-    max-width: 730px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: auto;
-  }
-  
-  .item-nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .item-nav a {
-    color: #f1f1f1;
-    text-decoration: none;
-    cursor: none;
-  }
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  margin-top: 40px;
+  position: absolute;
+}
 
-  .section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+@media screen and (max-width: 729px) {
+  nav {
+    display: none;
+  }
+}
+
+.liste-nav {
+  height: 100%;
+  max-width: 730px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: auto;
+}
+
+.item-nav {
+  display: flex;
+  align-items: center;
+}
+
+.item-nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: none;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
-    font-size: 144px;
-    color: white;
-    font-family: "ZonaProBold";
-    margin: 0 auto;
-    text-align: center;
+  font-size: 144px;
+  color: white;
+  font-family: "ZonaProBold";
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section1 p {
-    color: #fff;
-    font-family: 'ZonaProExtralight';
-    font-size: 24px;
-    text-align: center;
+  color: #fff;
+  font-family: "ZonaProExtralight";
+  font-size: 24px;
+  text-align: center;
 }
 
 .social {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 60px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
 }
 
 .social a {
-    color: #fff;
-    text-decoration: none;
-    padding: 50px;
-    font-family: 'ZonaProExtralight';
-    cursor: none;
+  color: #fff;
+  text-decoration: none;
+  padding: 50px;
+  font-family: "ZonaProExtralight";
+  cursor: none;
 }
 
-@media screen and (max-width: 990px){
-    h1 {
-        font-size: 80px;
-    }
+@media screen and (max-width: 990px) {
+  h1 {
+    font-size: 80px;
+  }
 }
 
-@media screen and (max-width: 480px){
-    .social {
-        display: flex;
-    }
-    .social a {
-        padding: 10px;
-    }
+@media screen and (max-width: 480px) {
+  .social {
+    display: flex;
+  }
+
+  .social a {
+    padding: 10px;
+  }
 }
 
 .about {
-    color: #fff;
-    margin-top: 30px;
+  color: #fff;
+  margin-top: 30px;
 }
 
 .aboutme {
-    max-width: 940px;
-    margin: auto;
+  max-width: 940px;
+  margin: auto;
 }
 
 .about h2 {
-    font-size: 48px;
-    padding: 65px;
-    padding-left: 0px;
-    padding-bottom: 20px;
+  font-size: 48px;
+  padding: 65px;
+  padding-left: 0px;
+  padding-bottom: 20px;
 }
 
 .about p {
-    font-size: 22px;
-    line-height: 35px;
-    font-family: 'ZonaProExtralight';
-    margin-left: 0px;
+  font-size: 22px;
+  line-height: 35px;
+  font-family: "ZonaProExtralight";
+  margin-left: 0px;
 }
 
 .description {
-    max-width: 700px;
-    margin: 20px;
+  max-width: 700px;
+  margin: 20px;
 }
 
 .techno {
-    padding-bottom: 20px;
-    margin: 20px;
+  padding-bottom: 20px;
+  margin: 20px;
 }
 
 .cv {
-    background: #fff;
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-    font-family: 'ZonaProExtralight';
-    border-radius: 14px;
-    max-width: 150px;
-    cursor:none;
-    transition: 0.4s ease-in-out;
-    margin: 20px;
-    margin-left: 0;
-    border: 1px solid black;
+  background: #fff;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  font-family: "ZonaProExtralight";
+  border-radius: 14px;
+  max-width: 150px;
+  cursor: none;
+  transition: 0.4s ease-in-out;
+  margin: 20px;
+  margin-left: 0;
+  border: 1px solid black;
 }
 
 .cv:hover {
-    color: #fff;
-    background: black;
-    border: 1px solid white;
+  color: #fff;
+  background: black;
+  border: 1px solid white;
 }
 
-@media screen and (max-width:1250px){
-    .aboutme {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 70px;
-        align-items: center;
-    }
-    .aboutme h2 {
-        padding: 0; 
-    }
-    .cv {
-        margin: 0;
-    }
+@media screen and (max-width: 1250px) {
+  .aboutme {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+  }
+
+  .aboutme h2 {
+    padding: 0;
+  }
+
+  .cv {
+    margin: 0;
+  }
 }
 
-@media screen and (max-width:906px){
-    .description{
-        max-width: 450px;
-        margin-right: 0;
-    }
+@media screen and (max-width: 906px) {
+  .description {
+    max-width: 450px;
+    margin-right: 0;
+  }
 }
+
+.project {
+  max-width: 940px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project h2 {
+  color: #f1f1f1;
+  font-size: 48px;
+  padding-bottom: 50px;
+}
+
+.project-view {
+  margin: auto;
+}
+
+.project p {
+  color: #f1f1f1;
+  font-size: 22px;
+  line-height: 35px;
+  font-family: "ZonaProExtralight";
+}
+
+.project-card {
+  color: #f1f1f1;
+  padding: 25px;
+  padding-left: 0px;
+}
+
+.project-card h3 {
+  font-size: 28px;
+  font-family: "ZonaProBold";
+  padding-bottom: 10px;
+}
+
+.project-card.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.twitchimg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.collabimg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-card.card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-description {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.project-card img {
+  max-width: 60%;
+  opacity: 70%;
+  transition: 1s all ease-in-out;
+  cursor: none;
+}
+
+.project-card img:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .project h2 {
+    text-align: center;
+  }
+
+  .project-txt {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card.card4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card a {
+    justify-content: center;
+    display: flex;
+  }
+}
+
 
 .contact {
-    color: white;
-    max-width: 940px;
-    margin: auto;
-    margin-top: 120px;
+  color: white;
+  max-width: 940px;
+  margin: auto;
+  margin-top: 120px;
 }
 
 .contact h2 {
-    font-size: 48px;
-    padding-bottom: 45px;
+  font-size: 48px;
+  padding-bottom: 45px;
 }
 
 .contact p {
-    font-family: 'ZonaProExtralight';
-    font-size: 22px;
-    line-height: 35px;
+  font-family: "ZonaProExtralight";
+  font-size: 22px;
+  line-height: 35px;
 }
 
 .social_network {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 90px;
 }
 
 .social_network a {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    cursor: none;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  cursor: none;
 }
 
-@media screen and (max-width:1250px){
-    .contact {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 70px;
-        align-items: center;
-    }
-    .social_network {
-        margin-top: 20px;
-    }
-    .social_network a {
-        padding: 10px;
-        font-size: 20px;
-    }
+@media screen and (max-width: 1250px) {
+  .contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+  }
+
+  .social_network {
+    margin-top: 20px;
+  }
+
+  .social_network a {
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 footer {
-    color: white;
-    font-size: 14px;
-    font-family: 'ZonaProExtralight';
-    display: flex;
-    justify-content: center;
-    margin-top: 110px;
-    padding-bottom: 20px;
-    width: 100vw;
-    text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: "ZonaProExtralight";
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  padding-bottom: 20px;
+  width: 100vw;
+  text-align: center;
 }

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conti Loris</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body>
-      <div class="marging">
-          <div class="line"></div>
-          <div class="line"></div>
-      </div>
-    <!--<div class="noise"></div>-->
-    <div class="cursor"></div>
-    <nav>
-      <ul class="liste-nav">
-        <li class="item-nav">
-          <a href="#about">About</a>
-        </li>
-        <li class="item-nav">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="item-nav">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="personal website" />
+  <title>Conti Loris</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
 
-    <section class="section1">
+<body>
+
+  <!--<div class="noise"></div>-->
+  <div class="cursor"></div>
+  <!--Nav-->
+  <nav data-aos="fade" data-aos-duration="3000">
+    <ul class="liste-nav">
+      <li class="item-nav">
+        <a href="#about">About</a>
+      </li>
+      <li class="item-nav">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="item-nav">
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!--Main-->
+  <main class="container">
+    <section class="section1" data-aos="fade" data-aos-duration="3000">
       <h1>LORIS CONTI</h1>
       <p>Junior Front-End Developer</p>
       <div class="social">
@@ -38,37 +40,80 @@
         <a href="https://www.twitch.tv/inoyami" target="_blank">Twitch</a>
       </div>
     </section>
-
+    <!--About-->
     <section class="about" id="about">
       <div class="aboutme">
-        <h2>About</h2>
-        <p class="description">
+        <h2 data-aos="fade" data-aos-duration="3000">About</h2>
+        <p class="description" data-aos="fade-right" data-aos-duration="3000">
           I am a 24 years old Belgian Front-End Developer learning at Becode and
           who is actually looking for a 3 months internship on 23 july 2021.
         </p>
-        <p class="techno">HTML - CSS - Sass - Javascript - VueJs - React - NodeJs</p>
+        <p class="techno" data-aos="fade" data-aos-duration="3000">
+          HTML - CSS - Sass - Javascript - VueJs - React - NodeJs
+        </p>
         <a class="cv" href="./assets/cv.pdf" target="_blank">My CV</a>
       </div>
     </section>
-
+    <!--Projects-->
     <section class="project" id="projects">
-        <h2>Projects</h2>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>I am looking for an internship<br>Feel free to contact me.</p>
-        <div class="social_network">
-            <a href="">Mail</a>
-            <a href="https://github.com/ShinYami" target="_blank">Linkedin</a>
-            <a href="https://www.linkedin.com/in/loris-conti-781a65202/" target="_blank">Github</a>
+      <h2 data-aos="fade-left" data-aos-duration="2000">Projects</h2>
+      <p class="project-txt" data-aos="fade-right" data-aos-duration="3000">Here is some projects i have done during my
+        Becode Training.</p>
+      <div class="project-view">
+        <div class="project-card card1" data-aos="fade" data-aos-duration="3000">
+          <h3>Restaurant Project</h3>
+          <p class="project-description">Group Project / HTML - CSS - JS</p>
+          <a href="https://laura-vln.github.io/restaurant-css-framework/" target="_blank"><img
+              src="./assets/restaurant.png" alt="preview restaurant project" /></a>
         </div>
+        <div class="project-card card2" data-aos="fade" data-aos-duration="3000">
+          <h3>React Twitch Clone</h3>
+          <p class="project-description">Solo Project / React</p>
+          <a class="twitchimg" href="https://shinyami.github.io/React-Twitch-Clone/" target="_blank"><img
+              src="./assets/twitch.jpeg" alt="preview react twitch clone" /></a>
+        </div>
+        <div class="project-card card3" data-aos="fade" data-aos-duration="3000">
+          <h3>Meteo App</h3>
+          <p class="project-description">Solo Project / Javascript</p>
+          <a href="https://shinyami.github.io/Meteo-App/" target="_blank"><img src="./assets/weather.jpg"
+              alt="preview app meteo weather" /></a>
+        </div>
+        <div class="project-card card4" data-aos="fade" data-aos-duration="3000">
+          <h3>Active Collab</h3>
+          <p class="project-description">Solo Project / HTML - CSS - JS</p>
+          <a class="collabimg" href="https://shinyami.github.io/progressive-enhancement/" target="_blank"><img
+              src="./assets/activecollab.png" alt="preview active collab" /></a>
+        </div>
+        <div class="project-card card5" data-aos="fade" data-aos-duration="3000">
+          <h3>Huddle Landing Page</h3>
+          <p class="project-description">Solo Project / HTML - CSS - JS</p>
+          <a href="https://shinyami.github.io/Huddle/" target="_blank"><img src="./assets/huddle.jpeg"
+              alt="preview Huddle landing page" /></a>
+        </div>
+      </div>
     </section>
+    <!--Contact-->
+    <section class="contact" id="contact">
+      <h2 data-aos="fade-left" data-aos-duration="2000">Contact</h2>
+      <p class="intern" data-aos="fade-right" data-aos-duration="3000">I am looking for an internship.<br />Feel free to
+        contact me.
+      </p>
+      <div class="social_network" data-aos="fade-down" data-aos-duration="3000">
+        <a href="mailto:loriisconti@gmail.com">Mail</a>
+        <a href="https://github.com/ShinYami" target="_blank">Linkedin</a>
+        <a href="https://www.linkedin.com/in/loris-conti-781a65202/" target="_blank">Github</a>
+      </div>
+    </section>
+  </main>
+  <!--footer-->
+  <footer>
+    <span>Conti Loris - 2021</span>
+  </footer>
+  <script src="./scripts/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 
-    <footer>
-        <span>Conti Loris - 2021</span>
-    </footer>
-
-    <script src="./scripts/script.js"></script>
-  </body>
 </html>
