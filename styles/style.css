@@ -30,6 +30,16 @@ body {
   font-family: "ZonaProBold";
 }
 
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+
+
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -60,6 +70,8 @@ body {
     display: none;
   }
 }
+
+
 
 nav {
   height: 70px;
@@ -419,4 +431,9 @@ footer {
   padding-bottom: 20px;
   width: 100vw;
   text-align: center;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
 }
